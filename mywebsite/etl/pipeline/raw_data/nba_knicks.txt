@@ -1,0 +1,81 @@
+Date Opponent Result Location W/L Div
+10/25 Boston 7:00 pm Home
+10/27 Atlanta 7:30 pm Away
+10/28 New Orleans 7:00 pm Away
+10/31 Cleveland 7:30 pm Away
+11/01 Cleveland 7:30 pm Home
+11/03 Milwaukee 7:30 pm Away
+11/06 LA Clippers 7:30 pm Home
+11/08 San Antonio 7:30 pm Home
+11/12 Charlotte 12:00 pm Home
+11/13 Boston 7:30 pm Away
+11/15 Atlanta 7:30 pm Away
+11/17 Washington 7:00 pm Away
+11/18 Charlotte 6:00 pm Away
+11/20 Minnesota 8:00 pm Away
+11/24 Miami 7:30 pm Home
+11/26 Phoenix 6:00 pm Home
+11/28 Charlotte 7:30 pm Home
+11/30 Detroit 7:30 pm Home
+12/01 Toronto 7:30 pm Away
+12/11 Toronto 7:30 pm Home
+12/13 Utah 9:00 pm Away
+12/15 Phoenix 10:00 pm Away
+12/16 LA Clippers 10:30 pm Away
+12/18 LA Lakers 10:30 pm Away
+12/20 Brooklyn 7:30 pm Away
+12/23 Milwaukee 12:30 pm Home
+12/25 Milwaukee 12:00 pm Home
+12/27 Okla City 8:00 pm Away
+12/29 Orlando 7:00 pm Away
+12/30 Indiana 7:00 pm Away
+01/01 Minnesota 3:00 pm Home
+01/03 Chicago 7:30 pm Home
+01/05 Philadelphia 7:30 pm Away
+01/06 Washington 7:00 pm Away
+01/09 Portland 7:30 pm Home
+01/11 Dallas 8:30 pm Away
+01/13 Memphis 8:00 pm Away
+01/15 Orlando 3:00 pm Home
+01/17 Houston 7:30 pm Home
+01/18 Washington 7:30 pm Home
+01/20 Toronto 7:30 pm Home
+01/23 Brooklyn 7:30 pm Away
+01/25 Denver 7:30 pm Home
+01/27 Miami 3:00 pm Home
+01/29 Charlotte 7:00 pm Away
+01/30 Utah 7:30 pm Home
+02/01 Indiana 7:30 pm Home
+02/03 LA Lakers 8:30 pm Home
+02/06 Memphis 7:30 pm Home
+02/08 Dallas 7:30 pm Home
+02/10 Indiana 7:30 pm Home
+02/12 Houston 8:00 pm Away
+02/14 Orlando 7:00 pm Away
+02/22 Philadelphia 7:00 pm Away
+02/24 Boston 8:30 pm Home
+02/26 Detroit 7:00 pm Away
+02/27 New Orleans 7:30 pm Home
+02/29 Golden State 7:30 pm Home
+03/03 Cleveland 7:00 pm Away
+03/05 Atlanta 7:30 pm Home
+03/08 Orlando 7:30 pm Home
+03/10 Philadelphia 6:00 pm Home
+03/12 Philadelphia 7:30 pm Home
+03/14 Portland 10:00 pm Away
+03/16 Sacramento 10:00 pm Away
+03/18 Golden State 10:00 pm Away
+03/21 Denver 9:00 pm Away
+03/23 Brooklyn 1:00 pm Home
+03/25 Detroit 7:30 pm Home
+03/27 Toronto 7:30 pm Away
+03/29 San Antonio 8:00 pm Away
+03/31 Okla City 7:00 pm Home
+04/02 Miami 7:30 pm Away
+04/04 Sacramento 7:30 pm Home
+04/05 Chicago 8:00 pm Away
+04/07 Milwaukee 7:00 pm Away
+04/09 Chicago 8:00 pm Away
+04/11 Boston 7:30 pm Away
+04/12 Brooklyn 7:30 pm Home
+04/14 Chicago 1:00 pm Home

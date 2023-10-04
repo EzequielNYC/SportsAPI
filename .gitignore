@@ -1,0 +1,14 @@
+# Ignore compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore dependencies
+venv/
+
+# database
+
+db.sqlite3
+
+# ignore my name 
+**/ezequielesparza/**

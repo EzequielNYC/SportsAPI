@@ -1,0 +1,163 @@
+Date Opponent Result Location W/L Div
+03/30 SF Giants W 5-0 Home 1-0 0-0
+04/01 SF Giants L 5-7 Home 1-1 0-0
+04/02 SF Giants W 6-0 Home 2-1 0-0
+04/03 Philadelphia W 8-1 Home 3-1 0-0
+04/04 Philadelphia L 1-4 Home 3-2 0-0
+04/05 Philadelphia W 4-2 Home 4-2 0-0
+04/07 Baltimore L 6-7 Away 4-3 0-1
+04/08 Baltimore W 4-1 Away 5-3 1-1
+04/09 Baltimore W 5-3 Away 6-3 2-1
+04/10 Cleveland L 2-3 Away 6-4 2-1
+04/11 Cleveland W 11-2 Away 7-4 2-1
+04/12 Cleveland W 4-3 Away 8-4 2-1
+04/13 Minnesota L 2-11 Home 8-5 2-1
+04/14 Minnesota L 3-4 Home 8-6 2-1
+04/15 Minnesota W 6-1 Home 9-6 2-1
+04/16 Minnesota W 2-0 Home 10-6 2-1
+04/18 LA Angels L 2-5 Home 10-7 2-1
+04/19 LA Angels W 3-2 Home 11-7 2-1
+04/20 LA Angels W 9-3 Home 12-7 2-1
+04/21 Toronto L 1-6 Home 12-8 2-2
+04/22 Toronto W 3-2 Home 13-8 3-2
+04/23 Toronto L 1-5 Home 13-9 3-3
+04/24 Minnesota L 1-6 Away 13-10 3-3
+04/25 Minnesota L 2-6 Away 13-11 3-3
+04/26 Minnesota W 12-6 Away 14-11 3-3
+04/27 Texas W 4-2 Away 15-11 3-3
+04/28 Texas L 2-5 Away 15-12 3-3
+04/29 Texas L 0-2 Away 15-13 3-3
+04/30 Texas L 2-15 Away 15-14 3-3
+05/01 Cleveland L 2-3 Home 15-15 3-3
+05/02 Cleveland W 4-2 Home 16-15 3-3
+05/03 Cleveland W 4-3 Home 17-15 3-3
+05/05 Tampa Bay L 4-5 Away 17-16 3-4
+05/06 Tampa Bay W 3-2 Away 18-16 4-4
+05/07 Tampa Bay L 7-8 Away 18-17 4-5
+05/08 Oakland W 7-2 Home 19-17 4-5
+05/09 Oakland W 10-5 Home 20-17 4-5
+05/10 Oakland W 11-3 Home 21-17 4-5
+05/11 Tampa Bay L 2-8 Home 21-18 4-6
+05/12 Tampa Bay W 6-5 Home 22-18 5-6
+05/13 Tampa Bay W 9-8 Home 23-18 6-6
+05/14 Tampa Bay L 7-8 Home 23-19 6-7
+05/15 Toronto W 7-4 Away 24-19 7-7
+05/16 Toronto W 6-3 Away 25-19 8-7
+05/17 Toronto L 0-3 Away 25-20 8-8
+05/18 Toronto W 4-2 Away 26-20 9-8
+05/19 Cincinnati W 6-2 Away 27-20 9-8
+05/20 Cincinnati W 7-4 Away 28-20 9-8
+05/21 Cincinnati W 4-1 Away 29-20 9-8
+05/23 Baltimore W 6-5 Home 30-20 10-8
+05/24 Baltimore L 6-9 Home 30-21 10-9
+05/25 Baltimore L 1-3 Home 30-22 10-10
+05/26 San Diego L 1-5 Home 30-23 10-10
+05/27 San Diego W 3-2 Home 31-23 10-10
+05/28 San Diego W 10-7 Home 32-23 10-10
+05/29 Seattle W 10-4 Away 33-23 10-10
+05/30 Seattle W 10-2 Away 34-23 10-10
+05/31 Seattle L 0-1 Away 34-24 10-10
+06/02 LA Dodgers L 4-8 Away 34-25 10-10
+06/03 LA Dodgers W 6-3 Away 35-25 10-10
+06/04 LA Dodgers W 4-1 Away 36-25 10-10
+06/06 Chi Sox L 2-3 Home 36-26 10-10
+06/08 Chi Sox L 5-6 Home 36-27 10-10
+06/08 Chi Sox W 3-0 Home 37-27 10-10
+06/09 Boston L 2-3 Home 37-28 10-11
+06/10 Boston W 3-1 Home 38-28 11-11
+06/11 Boston L 2-3 Home 38-29 11-12
+06/13 NY Mets W 7-6 Away 39-29 11-12
+06/14 NY Mets L 3-4 Away 39-30 11-12
+06/16 Boston L 5-15 Away 39-31 11-13
+06/18 Boston L 2-6 Away 39-32 11-14
+06/18 Boston L 1-4 Away 39-33 11-15
+06/20 Seattle W 3-1 Home 40-33 11-15
+06/21 Seattle W 4-2 Home 41-33 11-15
+06/22 Seattle L 2-10 Home 41-34 11-15
+06/23 Texas L 2-4 Home 41-35 11-15
+06/24 Texas W 1-0 Home 42-35 11-15
+06/25 Texas W 5-3 Home 43-35 11-15
+06/27 Oakland L 1-2 Away 43-36 11-15
+06/28 Oakland W 11-0 Away 44-36 11-15
+06/29 Oakland W 10-4 Away 45-36 11-15
+07/01 St. Louis L 4-11 Away 45-37 11-15
+07/01 St. Louis W 6-2 Away 46-37 11-15
+07/02 St. Louis L 1-5 Away 46-38 11-15
+07/03 Baltimore W 6-3 Home 47-38 12-15
+07/04 Baltimore W 8-4 Home 48-38 13-15
+07/05 Baltimore L 3-6 Home 48-39 13-16
+07/06 Baltimore L 1-14 Home 48-40 13-17
+07/07 Chi Cubs L 0-3 Home 48-41 13-17
+07/08 Chi Cubs W 6-3 Home 49-41 13-17
+07/09 Chi Cubs L 4-7 Home 49-42 13-17
+07/14 Colorado L 2-7 Away 49-43 13-17
+07/15 Colorado W 6-3 Away 50-43 13-17
+07/16 Colorado L 7-8 Away 50-44 13-17
+07/17 LA Angels L 3-4 Away 50-45 13-17
+07/18 LA Angels L 1-5 Away 50-46 13-17
+07/19 LA Angels L 3-7 Away 50-47 13-17
+07/21 Kansas City W 5-4 Home 51-47 13-17
+07/22 Kansas City W 5-2 Home 52-47 13-17
+07/23 Kansas City W 8-5 Home 53-47 13-17
+07/25 NY Mets L 3-9 Home 53-48 13-17
+07/26 NY Mets W 3-1 Home 54-48 13-17
+07/28 Baltimore L 0-1 Away 54-49 13-18
+07/29 Baltimore W 8-3 Away 55-49 14-18
+07/30 Baltimore L 3-9 Away 55-50 14-19
+07/31 Tampa Bay L 1-5 Home 55-51 14-20
+08/01 Tampa Bay L 2-5 Home 55-52 14-21
+08/02 Tampa Bay W 7-2 Home 56-52 15-21
+08/03 Houston W 4-3 Home 57-52 15-21
+08/04 Houston L 3-7 Home 57-53 15-21
+08/05 Houston W 3-1 Home 58-53 15-21
+08/06 Houston L 7-9 Home 58-54 15-21
+08/07 Chi Sox L 1-5 Away 58-55 15-21
+08/08 Chi Sox W 7-1 Away 59-55 15-21
+08/09 Chi Sox L 2-9 Away 59-56 15-21
+08/11 Miami W 9-4 Away 60-56 15-21
+08/12 Miami L 1-3 Away 60-57 15-21
+08/13 Miami L 7-8 Away 60-58 15-21
+08/14 Atlanta L 3-11 Away 60-59 15-21
+08/15 Atlanta L 0-5 Away 60-60 15-21
+08/16 Atlanta L 0-2 Away 60-61 15-21
+08/18 Boston L 3-8 Home 60-62 15-22
+08/19 Boston L 1-8 Home 60-63 15-23
+08/20 Boston L 5-6 Home 60-64 15-24
+08/22 Washington L 1-2 Home 60-65 15-24
+08/23 Washington W 9-1 Home 61-65 15-24
+08/24 Washington L 5-6 Home 61-66 15-24
+08/25 Tampa Bay W 6-2 Away 62-66 16-24
+08/26 Tampa Bay L 0-3 Away 62-67 16-25
+08/27 Tampa Bay L 4-7 Away 62-68 16-26
+08/28 Detroit W 4-1 Away 63-68 16-26
+08/29 Detroit W 4-2 Away 64-68 16-26
+08/30 Detroit W 6-2 Away 65-68 16-26
+08/31 Detroit L 3-4 Away 65-69 16-26
+09/01 Houston W 6-2 Away 66-69 16-26
+09/02 Houston W 5-4 Away 67-69 16-26
+09/03 Houston W 6-1 Away 68-69 16-26
+09/05 Detroit W 5-1 Home 69-69 16-26
+09/06 Detroit W 4-3 Home 70-69 16-26
+09/07 Detroit L 3-10 Home 70-70 16-26
+09/08 Milwaukee L 2-8 Home 70-71 16-26
+09/09 Milwaukee L 2-9 Home 70-72 16-26
+09/10 Milwaukee W 4-3 Home 71-72 16-26
+09/12 Boston W 3-2 Away 72-72 17-26
+09/12 Boston W 4-1 Away 73-72 18-26
+09/14 Boston L 0-5 Away 73-73 18-27
+09/14 Boston W 8-5 Away 74-73 19-27
+09/15 Pittsburgh W 7-5 Away 75-73 19-27
+09/16 Pittsburgh W 6-3 Away 76-73 19-27
+09/17 Pittsburgh L 2-3 Away 76-74 19-27
+09/19 Toronto L 1-7 Home 76-75 19-28
+09/20 Toronto L 1-6 Home 76-76 19-29
+09/21 Toronto W 5-3 Home 77-76 20-29
+09/22 Arizona W 7-1 Home 78-76 20-29
+09/24 Arizona L 1-7 Home 78-77 20-29
+09/25 Arizona W 6-4 Home 79-77 20-29
+09/26 Toronto W 2-0 Away 80-77 21-29
+09/27 Toronto W 6-0 Away 81-77 22-29
+09/28 Toronto L 0-6 Away 81-78 22-30
+09/29 Kansas City L 5-12 Away 81-79 22-30
+09/30 Kansas City W 5-2 Away 82-79 22-30
+10/01 Kansas City L 2-5 Away 82-80 22-30
