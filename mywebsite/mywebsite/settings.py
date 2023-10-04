@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'etl',
     'frontend',
     'rest_api',
-]
+    'rest_framework',
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

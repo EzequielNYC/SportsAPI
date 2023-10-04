@@ -1,22 +1,32 @@
-"""
-URL configuration for mywebsite project.
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
+from django.urls import include, path
 from django.contrib import admin
-from django.urls import path
+from rest_framework import routers
+from rest_api.views import (
+    MetsDataViewSet,
+    YankeesDataViewSet,
+    KnicksDataViewSet,
+    NetsDataViewSet,
+    GiantsDataViewSet,
+    JetsDataViewSet,
+    home,
+)
+
+router = routers.DefaultRouter()
+router.register('yankees-data', YankeesDataViewSet)
+router.register('mets-data', MetsDataViewSet)
+router.register('knicks-data',KnicksDataViewSet)
+router.register('nets-data', NetsDataViewSet)
+router.register('giants-data',GiantsDataViewSet)
+router.register('jets-data',JetsDataViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',home, name='home'),
+    path('api/', include(router.urls)),
+    path('yankees-data/', YankeesDataViewSet.as_view({'get': 'list'}), name='yankees-data'),
+    path('mets-data/', MetsDataViewSet.as_view({'get': 'list'}), name='mets-data'),
+    path('knicks-data/', KnicksDataViewSet.as_view({'get': 'list'}), name='knicks-data'),
+    path('nets-data/', NetsDataViewSet.as_view({'get': 'list'}), name='nets-data'),
+    path('giants-data/', GiantsDataViewSet.as_view({'get': 'list'}), name='giants-data'),
+    path('jets-data/', JetsDataViewSet.as_view({'get': 'list'}), name='jets-data'),
 ]
