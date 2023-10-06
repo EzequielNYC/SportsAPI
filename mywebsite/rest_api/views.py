@@ -3,12 +3,6 @@ from database.models import MetsData, YankeesData,KnicksData,NetsData,GiantsData
 from .serializers import NetsDataSerializer,KnicksDataSerializer,YankeesDataSerializer,MetsDataSerializer,JetsDataSerializer,GiantsDataSerializer
 from django.http import HttpResponse
 
-
-
-def home(request):
-    return HttpResponse("Welcome to the Sports API homepage")
-
-
 class YankeesDataViewSet(viewsets.ModelViewSet):
     queryset = YankeesData.objects.all()
     serializer_class = YankeesDataSerializer

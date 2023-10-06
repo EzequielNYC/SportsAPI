@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full Stack Programming Assistance</title>
+    <!-- Bootstrap core CSS -->
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+</head>
+<body>
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand">NY Sports API</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/use_api">Use API</a>
+                <a class="nav-link active" href="#">Contact</a>
+                <a class="nav-link" href="/data_preview">Data Preview</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">Sports Data Preview</h1>
+        <p class="lead">Click On a Team and see Data ! NBA Season has not started, no data yet</p>
+        <p class="lead">
+        </p>
+        <label for="team-select">Select a team:</label>
+        <select id="team-select">
+            <option value="MLB-Yankees">MLB - New York Yankees</option>
+            <option value="MLB-Mets">MLB - New York Mets</option>
+            <option value="NBA-Nets">NBA - Brooklyn Nets</option>
+            <option value="NBA-Knicks">NBA - New York Knicks</option>
+            <option value="NFL-Jets">NFL - New York Jets</option>
+            <option value="NFL-Giants">NFL - New York Giants</option>
+        </select>
+
+        <table id="data-table" class="table">
+            <thead>
+                <tr>
+                    <th class="col-sm-1">ID</th>
+                    <th class="col-sm-2">Date</th>
+                    <th class="col-sm-2">Opponent</th>
+                    <th class="col-sm-1">Result</th>
+                    <th class="col-sm-1">Score</th>
+                    <th class="col-sm-1">Opponent Score</th>
+                    <th class="col-sm-2">Location</th>
+                    <th class="col-sm-1">Total Wins</th>
+                    <th class="col-sm-1">Total Losses</th>
+                    <th class="col-sm-1">Divisional Wins</th>
+                    <th class="col-sm-1">Divisional Losses</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be dynamically populated by JavaScript -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>
+                Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>,
+                by <a href="https://twitter.com/mdo">@mdo</a>.
+            </p>
+        </div>
+    </footer>
+</div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script>
+$(document).ready(function () {
+  $('#team-select').on('change', function () {
+    var selectedTeam = $(this).val();
+    var league = selectedTeam.split("-")[0];
+    var team = selectedTeam.split("-")[1];
+    var scoreColumn = "";
+
+    if (league === "MLB") {
+      scoreColumn = team.toLowerCase() + "_score";
+    } else if (league === "NBA") {
+      scoreColumn = team.toLowerCase() + "_score";
+    } else if (league === "NFL") {
+      scoreColumn = team.toLowerCase() + "_score";
+    }
+
+    $.ajax({
+      url: '/' + team.toLowerCase() + '-data/',
+      method: 'GET',
+      dataType: 'json',
+      success: function (data) {
+        var tableBody = $('#data-table tbody');
+        tableBody.empty();
+
+        $.each(data, function (index, game) {
+          var score = game[scoreColumn];
+          var date = new Date(game.date); // Convert date string to a JavaScript Date object
+
+          if (isNaN(date)) {
+            date = 'N/A'; // Replace invalid dates with 'N/A'
+          } else {
+            // Format date using the desired format (dd/mm)
+            var formattedDate = date.toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit' });
+            date = formattedDate;
+          }
+
+          var row = '<tr>' +
+            '<td>' + game.id + '</td>' +
+            '<td>' + date + '</td>' +
+            '<td>' + game.opponent + '</td>' +
+            '<td>' + game.result + '</td>' +
+            '<td>' + score + '</td>' +
+            '<td>' + game.opponent_score + '</td>' +
+            '<td>' + game.location + '</td>' +
+            '<td>' + game.total_wins + '</td>' +
+            '<td>' + game.total_losses + '</td>' +
+            '<td>' + game.divisional_wins + '</td>' +
+            '<td>' + game.divisional_losses + '</td>' +
+            '</tr>';
+
+          tableBody.append(row);
+        });
+      },
+      error: function (xhr, status, error) {
+        console.log('An error occurred while fetching data: ' + error);
+      }
+    });
+  });
+
+  $('#data-table').DataTable();
+});
+</script>
+</body>
+</html>
