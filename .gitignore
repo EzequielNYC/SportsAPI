@@ -10,5 +10,25 @@ venv/
 
 db.sqlite3
 
-# ignore my name 
+# ignore my directories 
 **/ezequielesparza/**
+
+# Ignore local development settings
+/mywebsite/settings_local.py
+
+# Ignore log files
+/log/
+
+# Ignore sensitive files or directories
+/secret/
+
+# Ignore temporary or generated files
+*.swp
+*.swo
+*.log
+*.tmp
+
+# Ignore IDE or editor specific files
+/.vscode/
+.idea/
+*.pyc

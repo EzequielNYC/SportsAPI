@@ -1,33 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Full Stack Programming Assistance</title>
-    <!-- Bootstrap core CSS -->
-    <!-- DataTables CSS -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-</head>
-<body>
-<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+{% extends 'base.html' %}
+{% load static%}
+{% block content %}
+<div>
+    <!-- Content of the page -->
+
     <header class="masthead mb-auto">
         <div class="inner">
             <h3 class="masthead-brand">NY Sports API</h3>
             <nav class="nav nav-masthead justify-content-center">
                 <a class="nav-link" href="/">Home</a>
                 <a class="nav-link" href="/use_api">Use API</a>
-                <a class="nav-link active" href="#">Contact</a>
-                <a class="nav-link" href="/data_preview">Data Preview</a>
+                <a class="nav-link " href="/contact">Contact</a>
+                <a class="nav-link active" href="#">Data Preview</a>
             </nav>
         </div>
     </header>
 
     <main role="main" class="inner cover">
         <h1 class="cover-heading">Sports Data Preview</h1>
-        <p class="lead">Click On a Team and see Data ! NBA Season has not started, no data yet</p>
-        <p class="lead">
-        </p>
+        <p class="lead">Click On a Team and see Data! NBA Season has not started, no data</p>
+        <p class="lead"></p>
         <label for="team-select">Select a team:</label>
-        <select id="team-select">
+        <select id="team-select" class="form-control">
+            <option value="" disabled selected>-- Select a team --</option>
             <option value="MLB-Yankees">MLB - New York Yankees</option>
             <option value="MLB-Mets">MLB - New York Mets</option>
             <option value="NBA-Nets">NBA - Brooklyn Nets</option>
@@ -57,82 +52,70 @@
             </tbody>
         </table>
     </main>
-
-    <footer class="mastfoot mt-auto">
-        <div class="inner">
-            <p>
-                Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>,
-                by <a href="https://twitter.com/mdo">@mdo</a>.
-            </p>
-        </div>
-    </footer>
 </div>
-
 <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{% static 'js/jquery-3.7.1.min.js'%}"></script>
 <!-- DataTables JS -->
-<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="{% static 'js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'js/dataTables.bootstrap5.min.js' %}"></script>
+
 <script>
-$(document).ready(function () {
-  $('#team-select').on('change', function () {
-    var selectedTeam = $(this).val();
-    var league = selectedTeam.split("-")[0];
-    var team = selectedTeam.split("-")[1];
-    var scoreColumn = "";
-
-    if (league === "MLB") {
-      scoreColumn = team.toLowerCase() + "_score";
-    } else if (league === "NBA") {
-      scoreColumn = team.toLowerCase() + "_score";
-    } else if (league === "NFL") {
-      scoreColumn = team.toLowerCase() + "_score";
-    }
-
-    $.ajax({
-      url: '/' + team.toLowerCase() + '-data/',
-      method: 'GET',
-      dataType: 'json',
-      success: function (data) {
-        var tableBody = $('#data-table tbody');
-        tableBody.empty();
-
-        $.each(data, function (index, game) {
-          var score = game[scoreColumn];
-          var date = new Date(game.date); // Convert date string to a JavaScript Date object
-
-          if (isNaN(date)) {
-            date = 'N/A'; // Replace invalid dates with 'N/A'
-          } else {
-            // Format date using the desired format (dd/mm)
-            var formattedDate = date.toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit' });
-            date = formattedDate;
-          }
-
-          var row = '<tr>' +
-            '<td>' + game.id + '</td>' +
-            '<td>' + date + '</td>' +
-            '<td>' + game.opponent + '</td>' +
-            '<td>' + game.result + '</td>' +
-            '<td>' + score + '</td>' +
-            '<td>' + game.opponent_score + '</td>' +
-            '<td>' + game.location + '</td>' +
-            '<td>' + game.total_wins + '</td>' +
-            '<td>' + game.total_losses + '</td>' +
-            '<td>' + game.divisional_wins + '</td>' +
-            '<td>' + game.divisional_losses + '</td>' +
-            '</tr>';
-
-          tableBody.append(row);
+    $(document).ready(function () {
+        var dataTable = $('#data-table').DataTable({
+            "paging": true,
+            "ordering": true,
+            "info": true,
+            "pageLength": 10,
+            "search": false,
+            "dom": 'rt<"bottom"ip>',
+            "lengthMenu": [[10],[10]]
         });
-      },
-      error: function (xhr, status, error) {
-        console.log('An error occurred while fetching data: ' + error);
-      }
+    
+        $('#team-select').on('change', function () {
+            var selectedTeam = $(this).val();
+            var league = selectedTeam.split("-")[0];
+            var team = selectedTeam.split("-")[1];
+            var scoreColumn = "";
+    
+            if (league === "MLB" || league === "NBA" || league === "NFL") {
+                scoreColumn = team.toLowerCase() + "_score";
+            }
+    
+            $.ajax({
+                url: '/' + team.toLowerCase() + '-data/',
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    dataTable.clear(); // Clear existing rows from DataTable
+    
+                    $.each(data, function (index, game) {
+                        var score = game[scoreColumn];
+    
+                        var row = [
+                            game.id,
+                            game.date,
+                            game.opponent,
+                            game.result,
+                            score,
+                            game.opponent_score,
+                            game.location,
+                            game.total_wins,
+                            game.total_losses,
+                            game.divisional_wins,
+                            game.divisional_losses
+                        ];
+    
+                        dataTable.row.add(row); // Add the new row to DataTable
+                    });
+    
+                    dataTable.draw(); // Redraw the DataTable with updated data
+                },
+                error: function (xhr, status, error) {
+                    console.log('An error occurred while fetching data: ' + error);
+                }
+            });
+        });
     });
-  });
-
-  $('#data-table').DataTable();
-});
-</script>
-</body>
-</html>
+    </script>
+        
+{% endblock %}

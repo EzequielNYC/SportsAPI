@@ -157,6 +157,7 @@ Date Opponent Result Location W/L Div
 09/24 Philadelphia L 2-5 Away 71-85 21-25
 09/27 Miami W 11-2 Home 72-85 22-25
 09/27 Miami L 2-4 Home 72-86 22-26
-09/30 Philadelphia W 4-3 Home 73-86 23-26
-09/30 Philadelphia W 11-4 Home 74-86 24-26
-10/01 Philadelphia L 1-9 Home 74-87 24-27
+09/28 Miami W 1-0 Home 73-86 23-26
+09/30 Philadelphia W 4-3 Home 74-86 24-26
+09/30 Philadelphia W 11-4 Home 75-86 25-26
+10/01 Philadelphia L 1-9 Home 75-87 25-27

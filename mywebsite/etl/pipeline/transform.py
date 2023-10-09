@@ -2,14 +2,6 @@ import pandas as pd
 from datetime import datetime
 
 
-def covert_date_format(original_date):
-    try:
-        date_obj = datetime.strptime(original_date, "%m/%d")
-        new_date = date_obj.strftime("%m/%d")
-        return new_date
-    except ValueError:
-        return original_date
-
 def clean_text_file(file_name):
     cleaned_data = []
     
@@ -18,7 +10,7 @@ def clean_text_file(file_name):
         for line in lines[1:]:
             line_data = line.strip().split(' ')
             
-            date = covert_date_format(line_data[0][:5])
+            date = line_data[0][:5]
             
             if len(line_data) >= 6 and '-' in line_data[3]:
                 opponent = line_data[1]

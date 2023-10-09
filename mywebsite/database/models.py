@@ -1,7 +1,7 @@
 from django.db import models
 
 class MetsData(models.Model):
-    date = models.DateField(db_column='date', blank=True, null=True)
+    date = models.CharField(max_length=5, blank=True, null=True)
     opponent = models.TextField(db_column='opponent', blank=True, null=True)
     result = models.TextField(db_column='result', blank=True, null=True)
     mets_score = models.IntegerField(db_column='mets_score', blank=True, null=True)
@@ -18,7 +18,7 @@ class MetsData(models.Model):
 
 
 class YankeesData(models.Model):
-    date = models.DateField(db_column='date', blank=True, null=True)
+    date = models.CharField(max_length=5, blank=True, null=True)
     opponent = models.TextField(db_column='opponent', blank=True, null=True)
     result = models.TextField(db_column='result', blank=True, null=True)
     yankees_score = models.IntegerField(db_column='yankees_score', blank=True, null=True)
@@ -34,7 +34,7 @@ class YankeesData(models.Model):
 
 
 class KnicksData(models.Model):
-    date = models.DateField(db_column='date', blank=True, null=True)
+    date = models.CharField(max_length=5, blank=True, null=True)
     opponent = models.TextField(db_column='opponent', blank=True, null=True)
     result = models.TextField(db_column='result', blank=True, null=True)
     knicks_score = models.IntegerField(db_column='knicks_score', blank=True, null=True)
@@ -50,7 +50,7 @@ class KnicksData(models.Model):
 
 
 class NetsData(models.Model):
-    date = models.DateField(db_column='date', blank=True, null=True)
+    date = models.CharField(max_length=5, blank=True, null=True)
     opponent = models.TextField(db_column='opponent', blank=True, null=True)
     result = models.TextField(db_column='result', blank=True, null=True)
     nets_score = models.IntegerField(db_column='nets_score', blank=True, null=True)
@@ -67,7 +67,7 @@ class NetsData(models.Model):
 
 
 class GiantsData(models.Model):
-    date = models.DateField(db_column='date', blank=True, null=True)
+    date = models.CharField(max_length=5, blank=True, null=True)
     opponent = models.TextField(db_column='opponent', blank=True, null=True)
     result = models.TextField(db_column='result', blank=True, null=True)
     giants_score = models.IntegerField(db_column='giants_score', blank=True, null=True)
@@ -83,7 +83,7 @@ class GiantsData(models.Model):
 
 
 class JetsData(models.Model):
-    date = models.DateField(db_column='date', blank=True, null=True)
+    date = models.CharField(max_length=5, blank=True, null=True)
     opponent = models.TextField(db_column='opponent', blank=True, null=True)
     result = models.TextField(db_column='result', blank=True, null=True)
     jets_score = models.IntegerField(db_column='jets_score', blank=True, null=True)
