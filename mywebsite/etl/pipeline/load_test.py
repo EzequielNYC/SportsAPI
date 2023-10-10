@@ -4,6 +4,9 @@ import sqlite3
 import pandas as pd
 from load import insert_data_into_database
 
+
+# testing that database population by comparing it to eachtimes dataframe before being loaded - if they are equal - pass
+
 class TestLoadingData(unittest.TestCase):
 
     def setUp(self):
@@ -52,7 +55,7 @@ class TestLoadingData(unittest.TestCase):
         rows = self.cursor.fetchall()
 
         # Assert that the number of rows in the database matches the number of rows in the DataFrame
-        self.assertEqual(len(rows), len(data))
+        self.assertEqual(len(rows), len(data)) # - pass
 
 if __name__ == "__main__":
     unittest.main()
