@@ -1,6 +1,4 @@
 import pandas as pd
-from datetime import datetime
-
 
 def clean_text_file(file_name):
     cleaned_data = []
@@ -35,6 +33,3 @@ def clean_text_file(file_name):
     # Convert cleaned_data to a pandas DataFrame
     data = pd.DataFrame(cleaned_data, columns=['date', 'opponent', 'result', 'ny_score', 'opponent_score', 'location', 'total_wins', 'total_losses', 'divisional_wins', 'divisional_losses'])
     return data
-
-
-

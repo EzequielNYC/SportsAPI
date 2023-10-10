@@ -136,3 +136,5 @@ REST_FRAMEWORK = {
         'rest_api.permissions.ReadOnly',
     ],
 }
+
+ETL_SCRIPT_PATH = os.path.join(BASE_DIR, 'etl', 'pipeline', 'main.py')
